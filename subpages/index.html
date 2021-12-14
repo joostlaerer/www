@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/calculator.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="scripts/calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Dette skal være en test for kalkulator</h1>
+    <html>Rask gjennomgang, vi trenger imput felt</html>
+
+<div class="slidecontainer">
+    <p>Flytt slideren for å velge temperatur ute</p>
+  <input type="range" min="-40" max="50" value="20" class="slider" id="sliderUteTemp">
+  <p>Verdi: <span id="uteTempFelt"></span></p>
+</div>
+<div class="slidecontainer">
+    <p>Flytt slideren for å velge temperatur inne</p>
+  <input type="range" min="-40" max="50" value="20" class="slider" id="sliderInneTemp">
+  <p>Verdi: <span id="inneTempFelt"></span></p>
+</div>
+<form>
+  <label for ="skriv arealet av vinduet">Skriv inn arealet</label>
+  <input type="text" id="arealInput" value="skriv arealet av vinduet">
+  <br>
+  <br>
+  <label>Skriv inn u-verdien på vinduet</label>
+  <input type="text" id="uverdiInput" value="skriv inn uverdien vinduet">
+</form>
+<br>
+<button id=utregningButton>Hit me</button>
+<label id=utregnetWattUT>Her kommer verdien </label>
+<br><br><br>
+
+<!--Legge til dropdown for å velge vindu--> 
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Velg type vindu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+    <option value="0.8">Passivhus (NS 3700)</option>
+    <option value="1.2">Nye forskrifter 2010)</option>
+    <option value="1.6">Byggforskriftene 1997)</option>
+    <option value="2.4">Byggforskriftene 1987</option>
+    <option value="2.6">Byggforskriftene på 60-70 -tallet</option>
+    <option value="2.8">Byggforskriftene på 40-tallet</option>
+
+    <!--    <a>Passivhus (NS 3700)</a>
+    <a>Nye forskrifter 2010</a>
+    <a>Byggforskriftene 1997</a>
+    <a>Byggforskriftene 1987</a>
+    <a>Byggforskriftene på 60-70 -tallet</a>
+    <a>Byggforskriftene på 40-tallet</a> -->
+  </div>
+</div>
+
+</html>
+
+<!-- Utvikling av U verdi for vinduer	U-verdi
+Passivhus (NS 3700)
+Nye forskrifter 2010
+Byggforskriftene 1997
+Byggforskriftene 1987
+Byggforskriftene på 60-70 -tallet 
+Byggforskriftene på 40-tallet	0,8
+1,2
+1,6
+2,4
+2,6
+2,8*// -->
